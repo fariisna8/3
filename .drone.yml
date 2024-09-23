@@ -1,7 +1,7 @@
 ---
 kind: pipeline
 type: docker
-name: default
+name: default1
 
 steps:
 - name: greeting
@@ -12,7 +12,7 @@ steps:
 ---
 kind: pipeline
 type: docker
-name: default
+name: default2
 
 steps:
 - name: greeting1
@@ -32,5 +32,5 @@ steps:
    
 
 depends_on:
-- build1
-- build2
+- default1
+- default2
